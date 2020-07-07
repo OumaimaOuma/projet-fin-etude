@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/welcome', function () {
     return view('welcome');
 });
-Route::get('/detail_emploi', function (){
-    return view('detail_emploi');
-});
+
 Route::get('/detail','CandidatController@show');
 
 
@@ -26,13 +24,8 @@ Route::get('/detail','CandidatController@show');
 Route::get('/paiement', function(){
     return view('paiement');
 } );
-Route::get('/inscription', function(){
-    return view('inscription');
-});
-route::get('/login_candidat', function(){
-    return view('login_candidat');
 
-});
+
 
 
 
